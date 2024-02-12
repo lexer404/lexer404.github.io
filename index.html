@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website - Ompabaletse Vece</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c1b15c4cff.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="Images/Web capture_19-1-2024_13612_looka.com.jpeg"
+            class="logo"
+            alt="Logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Developer/Programmer and many more</p>
+          <h1>
+            Hi, I'm <span>Ompabaletse</span><br />
+            Vece
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-------------about------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="Images/WhatsApp Image 2023-10-17 at 14.20.00_114af63c.jpg"
+              alt="Image showing Ompabaletse"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a passionate IT Graduate in such a way that I don't label
+              myself as only a developer or programmer, as I always want to
+              learn more so that I can be able to assist where needed. I have
+              background knowledge in Python, Java, C/C++ and C#. However, Java
+              and Python are languages I am mostly comfortable in. I have good
+              communication skills as I have been helping students as a Student
+              Assisstant apponited by my lecturer during my university years.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links onclick=" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links onclick=" onclick="opentab('education')">
+                Education
+              </p>
+            </div>
+            <div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>UiPath</span><br />Providing solutions using
+                    automation
+                  </li>
+                  <li>
+                    <span>Python Developer</span><br />Develop applications and
+                    software using Python
+                  </li>
+                  <li>
+                    <span>Web Developer</span><br />Create functional
+                    user-friendly websites and web applications
+                  </li>
+                  <li>
+                    <span>Agile Project Management</span><br />Managing software
+                    Development projects
+                  </li>
+                  <li>
+                    <span>Data Engineer</span><br />Retrieve data from database,
+                    execute queries, create records.
+                  </li>
+                  <li>
+                    <span>Java Developer</span><br />Develop applications and
+                    software using Java
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2023 - 2024</span><br />Internship at MICT SETA</li>
+                  <li>
+                    <span>2022 - 2023</span><br />Student Assistant at
+                    North-West University
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2024</span><br />BSc IT Graduate at North-West
+                    University
+                  </li>
+                  <li>
+                    <span>2020</span><br />National Senior Certificate (Matric)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------services---------------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Develop a well strcutured user-friendly website. Website can have
+              the of systerm-to-system interface
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-microchip"></i>
+            <h2>Robotic Process Automation</h2>
+            <p>
+              Design a automated process to help with daily task to imporve
+              productivity
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Database Engineer</h2>
+            <p>
+              Design efficient database engine process for sorting and accessing
+              information
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Software Engineer</h2>
+            <p>Design, develop, test, and maintain software applications</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------portfolio---------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/5nvdc3az.png" alt="GitHub Icon" />
+            <div class="layer">
+              <h3>CRUD RESTful API</h3>
+              <p>
+                CRUD RESTful API that will connect to a database storing basic
+                logistics data.
+              </p>
+              <a
+                href="https://github.com/lexer404/CRUD-RESTful-API-"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/5nvdc3az.png" alt="GitHub Icon" />
+            <div class="layer">
+              <h3>ASP.NET Core MVC Web Application</h3>
+              <p>
+                Given an existing ASP.NET Core MVC Web Application that will
+                need to be enhanced and improved.
+              </p>
+              <a
+                href="https://github.com/lexer404/ASP.NET-Core-MVC-Web-Application-"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/5nvdc3az.png" alt="GitHub Icon" />
+            <div class="layer">
+              <h3>Robotic Process Automation (RPA)</h3>
+              <p>
+                Automate time-consuming and highly repetitive tasks to allow
+                people the availed capacity to work on more intuitive tasks.
+              </p>
+              <a
+                href="https://github.com/lexer404/Robotic-Process-Automation-RPA-"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/lexer404" target="_blank" class="btn"
+          >See More</a
+        >
+      </div>
+    </div>
+
+    <!-------------contact------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> vecepabi@iCloud.com</p>
+            <p><i class="fa-solid fa-phone"></i> +27 74 560 1753</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/ompabaletse-vece-797533283/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/lexer404" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="Images/OS_VECE_CV.pdf" download class="btn btn2"
+              >Download my CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Ompabaletse</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwfIBN90suT1LP_f6fSkSzkuUmiyVSmLq5bpXdAo4vpaGAQDkXKyJdQ9DsGFVuCNRwL2A/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
